@@ -1,12 +1,18 @@
 package com.lanhu.datastructure.list;
 
-import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
 /**
  * @author 蓝狐
  *
  * 单链表尾结点为null
+ * linkedlist采用链表形式实现
+ * 链表的优势
+ * (1)增加删除快速，时间复杂度为O(1)
+ * (2)没有扩容机制，可以随意增加结点
+ * (3)可以实现队列
+ * 链表的劣势
+ * (1)查询时间慢，时间复杂度为O(n)
  */
 public class LinkedList<T> implements List<T>{
 

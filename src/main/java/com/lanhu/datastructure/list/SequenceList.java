@@ -5,6 +5,14 @@ import java.util.Arrays;
 /**
  * @author 蓝狐
  * 顺序表
+ * 数组实现顺序表
+ * 数组的优势：
+ * (1)内存空间连续
+ * (2)查询快速，可以随机访问，时间复杂度为O(1)
+ * 数组劣势：
+ * (1)预先分配空间，并且固定不变，可能造成空间浪费
+ * (2)增加，删除涉及到数组的移动
+ * (3)大量的修改操作，涉及到大量的system.arraycopy
  */
 public class SequenceList<T> implements List<T>{
     /**
